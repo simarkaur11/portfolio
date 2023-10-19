@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0074d9;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.5rem;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+        }
+
+        nav ul li {
+            margin: 0 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #0074d9;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .project {
+            margin: 2rem 0;
+            padding: 2rem;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .project h3 {
+            font-size: 1.8rem;
+            margin-top: 0;
+        }
+
+        .skill-set {
+            margin: 2rem 0;
+            padding: 2rem;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .contact-info {
+            list-style: none;
+        }
+
+        .skills {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            margin-bottom: 1rem;
+        }
+
+        .skills i {
+            margin-right: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 1rem 0;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            .project {
+                margin: 1.5rem 0;
+                padding: 1.5rem;
+            }
+
+            .project h3 {
+                font-size: 1.5rem;
+            }
+
+            .skill-set {
+                margin: 1.5rem 0;
+                padding: 1.5rem;
+            }
+
+            .contact-info {
+                list-style: none;
+            }
+
+            .skills li {
+                margin-bottom: 1rem;
+            }
+        }
+        #about:target, #contact:target {
+            background-color: #0074d9; 
+            color: #fff;
+        }
+        #projects:target, #skills:target {
+            background-color: #0074d9; 
+            color: #0f0f0f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SIMARJEET KAUR</h1>
+        <p>Software Developer</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container" id="about">
+        <h2>About Me</h2>
+        <p>
+            I'm an enthusiastic computer science student driven by a deep passion for technology and a commitment to solving real-world problems through innovation. My journey in computer science began with a curiosity about the interplay between software and hardware and has evolved into a lifelong pursuit. I specialize in:
+        </p>
+        <ul>
+            <li><b><u>Software Development</u> : </b>Proficient in a range of programming languages, I create efficient and user-friendly software applications, including web, mobile, and desktop solutions.</li>
+            <li><b><u>Machine Learning</u> : </b>Fascinated by the potential of machine learning and artificial intelligence, I delve into algorithms, data analysis, and natural language processing, eager to transform industries.</li>
+            <li><b><u>Problem Solving</u> : </b>The allure of solving complex challenges in the field of computer science drives me. I tackle problems systematically and enjoy discovering innovative solutions.</li>
+        </ul>
+    </div>
+    <div class="container" id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1: Health Insurance Prediction Model</h3>
+            <ul>
+                <li>This is a machine learning-based prediction model.</li>
+                <li>It predicts health insurance for different regions based on user-provided information.</li>
+                <li>It is trained on a pre-existing dataset and has its own GUI interface.</li>
+            </ul>
+        </div>
+        <div class="project">
+            <h3>Project 2: Book Recommendation System</h3>
+            <ul>
+                <li>It's a machine learning algorithm-based model for recommending books based on user interests.</li>
+                <li>Books are categorized by genre, and the system recommends books based on user preferences.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" id="skills">
+        <h2>Skill Set</h2>
+        <div class="skill-set">
+            <ul class="skills">
+                <li><i class="fas fa-code"></i> HTML</li>
+                <li><i class="fas fa-paint-brush"></i> CSS</li>
+                <li><i class="fas fa-code"></i> C/C++</li>
+                <li><i class="fab fa-python"></i> Python</li>
+                <li><i class="fas fa-brain"></i> Machine Learning</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <h2>Contact Me</h2>
+        <ul class="contact-info">
+            <li><i class="fas fa-envelope"></i> EMAIL: simransokhey@gmail.com</li>
+            <li><i class="fas fa-phone"></i> MOBILE NUMBER: 9416617909</li>
+            <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/simarjeet-kaur-192604222?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn Profile</a></li>
+        </ul>
+    </div>
+    <footer>
+        &copy; 2023 Simarjeet Kaur
+    </footer>
+</body>
+</html>
